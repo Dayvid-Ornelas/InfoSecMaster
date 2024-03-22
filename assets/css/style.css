@@ -1,0 +1,90 @@
+.welcome{
+    margin-top: 95px;
+    height: 843px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    background-image: url(/assets/midia/img/fundo\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100vw; 
+}
+
+.title-welcome{
+    animation: loadText1 2.7s ease-out forwards;
+    width: 860px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+
+.description-welcome{
+    animation: loadText2 2.7s ease-out forwards;
+    width: 1160px;
+}
+
+.presentation{
+    text-align: justify;
+    width: 895px;
+    margin: 10px auto;
+    margin-bottom: 110px;
+}
+
+h1{
+    width: 700px;
+    height: 70px;
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Azul-Claro);
+    border-radius: 35px;
+}
+
+.main-theme{
+    margin-bottom: 60px;
+}
+
+#jaba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 27px;
+}
+
+.description{
+    padding: 20px 30px;
+    border: 2px solid var(--Branco);
+    border-radius: 25px;
+}
+
+.introduction{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+
+@keyframes loadText1{
+    0%{
+        margin-left: -900px;
+    }
+    100%{
+        margin-left: 80px;
+    }
+}
+
+@keyframes loadText2{
+    0%{
+        margin-left: -1300px;
+    }
+    100%{
+        margin-left: 80px;
+    }
+}
+
+@keyframes loadImg{
+    0%{
+        margin-left: -1900px;
+    }
+    100%{
+        margin-left: 0;
+    }
+}

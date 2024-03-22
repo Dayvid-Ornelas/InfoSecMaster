@@ -1,0 +1,86 @@
+.main-container{
+    text-align: justify;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    width: 895px;
+    margin: auto;
+}
+
+h1{
+    width: 700px;
+    height: 70px;
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Azul-Claro);
+    border-radius: 35px;
+}
+
+#img-presentation{
+    box-shadow: 0px 0px 7px 3px grey;
+    border-radius: 25px;
+}
+
+#quemSomos{
+    margin-top: 100px;
+}
+
+.main-description{
+    background-color: var(--Azul);
+    margin: 50px auto;
+    width: 1000px;
+    border-radius: 25px;
+}
+
+.title-description{
+    margin: 15px auto;
+    width: 780px;
+    padding-top: 20px;
+    border-bottom: 2px solid var(--Branco);
+}
+
+.paragraph-description{
+    width: 780px;
+    margin: 10px auto;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.list{
+    width: 780px;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.main-theme{
+    margin-bottom: 60px;
+}
+
+.description{
+    padding: 20px 30px;
+    border: 2px solid var(--Branco);
+    border-radius: 25px;
+}
+
+.introduction{
+    font-size: 30px;
+}
+
+#introductionQuemSomos{
+    width: 780px;
+    margin: 80px auto;
+}
+
+h2{
+    margin: 30px auto;
+    margin-bottom: 50px;
+}
