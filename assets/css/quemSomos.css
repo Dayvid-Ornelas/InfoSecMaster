@@ -4,20 +4,22 @@
 
 .presentation{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    width: 895px;
+    max-width: 895px;
     margin: auto;
 }
 
 h1{
-    width: 700px;
-    height: 70px;
+    max-width: 700px;
+    min-height: 70px;
     display: flex;
     margin: 50px auto;
     justify-content: center;
     align-items: center;
     background-color: var(--Azul-Claro);
     border-radius: 35px;
+    padding: 15px;
 }
 
 #img-presentation{
@@ -32,26 +34,26 @@ h1{
 .main-description{
     background-color: var(--Azul);
     margin: 50px auto;
-    width: 1000px;
+    max-width: 90%;
     border-radius: 25px;
 }
 
 .title-description{
     margin: 15px auto;
-    width: 780px;
+    max-width: 90%;
     padding-top: 20px;
     border-bottom: 2px solid var(--Branco);
 }
 
 .paragraph-description{
-    width: 780px;
+    max-width: 90%;
     margin: 10px auto;
     padding-bottom: 20px;
     font-size: 30px;
 }
 
 .list{
-    width: 780px;
+    max-width: 80%;
     margin: 20px auto;
     padding-bottom: 20px;
     font-size: 30px;
@@ -66,6 +68,7 @@ span{
 }
 
 .description{
+    max-width: 90%;
     padding: 20px 30px;
     border: 2px solid var(--Branco);
     border-radius: 25px;
@@ -83,4 +86,31 @@ span{
 h2{
     margin: 30px auto;
     margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    #img-presentation{
+        max-width: 80%;
+    }
+    .title-description{
+        font-size: 25px;
+    }
+    .paragraph-description{
+        font-size: 20px;
+    }
+    .list{
+        font-size: 20px;
+    }
+    .introduction{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1{
+        font-size: 22px;
+    }
 }

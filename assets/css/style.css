@@ -1,6 +1,7 @@
 .welcome{
-    margin-top: 95px;
-    height: 843px;
+    margin-top: 70px;
+    min-height: 95vh;
+    width: auto;
     margin-bottom: 30px;
     font-size: 40px;
     background-image: url(/assets/midia/img/fundo\ \(1\).png);
@@ -10,36 +11,48 @@
 
 .title-welcome{
     animation: loadText1 2.7s ease-out forwards;
-    width: 860px;
+    max-width: 860px;
     margin-bottom: 30px;
     padding-top: 40px;
 }
 
 .description-welcome{
     animation: loadText2 2.7s ease-out forwards;
-    width: 1160px;
+    max-width: 1160px;
 }
 
 .presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: justify;
-    width: 895px;
+    max-width: 895px;
     margin: 10px auto;
     margin-bottom: 110px;
 }
 
 h1{
-    width: 700px;
-    height: 70px;
+    max-width: 700px;
+    min-height: 70px;
     display: flex;
     margin: 50px auto;
     justify-content: center;
     align-items: center;
     background-color: var(--Azul-Claro);
     border-radius: 35px;
+    padding: 15px;
+}
+
+h2{
+    display: flex;
+    text-align: center;
 }
 
 .main-theme{
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #jaba{
@@ -80,11 +93,82 @@ h1{
     }
 }
 
-@keyframes loadImg{
-    0%{
-        margin-left: -1900px;
+@media (max-width: 1024px){
+    .welcome{
+        font-size: 25px;
+        margin-bottom: 0px;  
     }
-    100%{
-        margin-left: 0;
+    .title-welcome{
+        max-width: 660px;
+        margin-bottom: 30px;
+        padding-top: 40px;
+    }
+    .description-welcome{
+        max-width: 860px;
+    }
+    .presentation{
+        margin-top: -250px;
+    }
+}
+
+@media (max-width: 768px){
+    .welcome{
+        margin-top: 75px;
+        font-size: 20px;
+    }
+    .title-welcome{
+        max-width: 660px;
+        margin-bottom: 30px;
+        padding-top: 40px;
+    }
+    .description-welcome{
+        max-width: 660px;
+    }
+    .presentation{
+        margin-top: -400px;
+        font-size: 20px;
+    }
+    .description{
+        max-width: 90%;
+    }
+    .introduction{
+        font-size: 25px;
+    }
+    h2{
+        width: 500px;
+    }
+    .main-theme{
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .welcome{
+        margin-top: 75px;
+        font-size: 16px;
+    }
+    .title-welcome{
+        max-width: 260px;
+        margin-bottom: 30px;
+        padding-top: 40px;
+    }
+    .description-welcome{
+        max-width: 360px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .presentation{
+        margin-top: -550px;
+    }
+    h2{
+        width: 380px;
+        font-size: 23px;
+    }
+    #jaba{
+        font-size: 20px;
+    }
+    .introduction{
+        font-size: 20px;
     }
 }
