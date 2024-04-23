@@ -212,7 +212,7 @@ body{
 }
 
 #logoFooter{
-    width: 300px;
+    width: 301px;
 }
 
 @media (max-width: 1024px){
@@ -298,6 +298,9 @@ body{
     #suport{
         width: 160px;
         margin-right: 0px;
+    }
+    #logoFooter{
+        width: 240px;
     }
 }
 

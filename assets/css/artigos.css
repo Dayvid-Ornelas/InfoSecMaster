@@ -57,6 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: var(--Azul-Claro);
     border-radius: 20px;
     max-width: 700px;
@@ -83,6 +84,12 @@
 
 #title-section3{
     width: 300px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 #text-section{
@@ -131,9 +138,11 @@
     .text-section{
         font-size: 20px;
     }
-    
     .list-section{
         font-size: 20px;
+    }
+    .description{
+        font-size: 18px;
     }
 }
 
@@ -156,5 +165,8 @@
     
     .list-section{
         font-size: 17px;
+    }
+    .description{
+        font-size: 16px;
     }
 }
