@@ -215,7 +215,7 @@ body{
     width: 301px;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1300px){
     .articles{
         max-width: 80vw;
     }
@@ -325,7 +325,8 @@ body{
         max-width: 90vw;
     }
     .card-articles{
-        height: 520px;
+        width: 75vw;
+        height: 530px;
     }
     .rights{
         display: none;
@@ -333,5 +334,30 @@ body{
     #suport{
         width: 145px;
         margin-right: 20px;
+    }
+}
+
+@media (max-width: 375px){
+    .container{
+        width: 415px;
+    }
+    #artigos{
+        width: 140px;
+    }
+    .articles{
+        max-width: 100vw;
+    }
+    .card-articles{
+        width: 85vw;
+    }
+}
+
+@media (max-width: 320px){
+    .articles{
+        max-width: 115vw;
+    }
+    .card-articles{
+        width: 100vw;
+        height: 530px;
     }
 }

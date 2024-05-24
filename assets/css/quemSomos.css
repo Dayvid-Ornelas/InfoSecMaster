@@ -34,7 +34,7 @@ h1{
 .main-description{
     background-color: var(--Azul);
     margin: 50px auto;
-    max-width: 90%;
+    max-width: 50%;
     border-radius: 25px;
 }
 
@@ -88,6 +88,12 @@ h2{
     margin-bottom: 50px;
 }
 
+@media (max-width: 1024px){
+    .main-description{
+        max-width: 80%;
+    }
+}
+
 @media (max-width: 768px) {
     #img-presentation{
         max-width: 80%;
@@ -112,5 +118,14 @@ h2{
 @media (max-width: 500px) {
     h1{
         font-size: 22px;
+    }
+    .main-description{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    h1{
+        font-size: 16px;
     }
 }
