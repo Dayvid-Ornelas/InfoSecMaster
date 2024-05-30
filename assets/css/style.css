@@ -1,10 +1,10 @@
 .welcome{
     margin-top: 70px;
     min-height: 95vh;
-    width: auto;
+    width: 100%;
     margin-bottom: 30px;
     font-size: 40px;
-    background-image: url(/assets/midia/img/fundo\ \(1\).png);
+    background-image: url(../midia/img/fundo.png);
     background-repeat: no-repeat;
     background-size: 100vw; 
 }
@@ -74,7 +74,6 @@ h2{
     font-size: 30px;
 }
 
-
 @keyframes loadText1{
     0%{
         margin-left: -900px;
@@ -107,7 +106,7 @@ h2{
         max-width: 860px;
     }
     .presentation{
-        margin-top: -100px;
+        margin-top: -200px;
     }
 }
 
@@ -125,7 +124,7 @@ h2{
         max-width: 660px;
     }
     .presentation{
-        margin-top: -250px;
+        margin-top: -350px;
         font-size: 20px;
     }
     .description{
@@ -139,6 +138,24 @@ h2{
     }
     .main-theme{
         padding: 0px 20px;
+    }
+    
+    @keyframes loadText1{
+        0%{
+            margin-left: -900px;
+        }
+        100%{
+            margin-left: 20px;
+        }
+    }
+    
+    @keyframes loadText2{
+        0%{
+            margin-left: -1300px;
+        }
+        100%{
+            margin-left: 20px;
+        }
     }
 }
 
@@ -159,7 +176,7 @@ h2{
         font-size: 22px;
     }
     .presentation{
-        margin-top: -350px;
+        margin-top: -480px;
     }
     h2{
         width: 380px;
@@ -173,7 +190,16 @@ h2{
     }
 }
 
+@media (max-width: 425px){
+    .presentation{
+        margin-top: -550px;
+    }
+}
+
 @media (max-width: 375px){
+    .welcome{
+        min-height: 100vh;
+    }
     .description-welcome{
         max-width: 300px;
     }

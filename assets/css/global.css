@@ -132,6 +132,15 @@ body{
     margin-bottom: 30px;
 }
 
+.link-card{
+    text-decoration: none;
+    color: var(--Branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .card-articles{
     display: flex;
     width: 60%;
@@ -174,7 +183,7 @@ body{
     border-bottom: 2px solid var(--Branco);
 }
 
-.link-cards{
+.link-button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,14 +191,16 @@ body{
     width: 170px;
     height: 45px;
     border-radius: 10px;
+    border: transparent;
     text-decoration: none;
     color: var(--Branco);
     margin: 15px auto;
     font-size: 23px;
     transition: 0.4s;
+    cursor: pointer;
 }
 
-.link-cards:hover{
+.link-button:hover{
     background-color: var(--Azul-Escuro);
 }
 
@@ -214,6 +225,7 @@ body{
 #logoFooter{
     width: 301px;
 }
+
 
 @media (max-width: 1300px){
     .articles{
@@ -242,7 +254,7 @@ body{
     }
     .Menu{
         display: block;
-        margin-right: 15px;
+        margin-right: 25px;
     }
     .Menu.ativo .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
@@ -304,12 +316,6 @@ body{
     }
 }
 
-@media (max-width: 540px){
-    .Menu{
-        margin-left: -30px;
-    }
-}
-
 @media (max-width: 500px){
     .nav-item{
         font-size: 20px;
@@ -337,7 +343,7 @@ body{
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 415px){
     .container{
         width: 415px;
     }
