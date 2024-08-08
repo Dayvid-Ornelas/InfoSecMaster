@@ -191,16 +191,10 @@ h2{
 }
 
 @media (max-width: 425px){
-    .presentation{
-        margin-top: -550px;
-    }
-}
-
-@media (max-width: 375px){
     .welcome{
-        min-height: 100vh;
+        display: none;
     }
-    .description-welcome{
-        max-width: 300px;
+    .presentation{
+        margin-top: 50px;
     }
 }
